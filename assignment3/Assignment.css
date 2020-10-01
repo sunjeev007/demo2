@@ -1,0 +1,82 @@
+.from{
+    
+    width: 38%;
+    display:block;
+    float: left;
+    margin: auto;
+    margin-left: 4rem;
+}
+.to{
+    width: 38%;
+    display:block;
+    float: right;
+    margin: auto;
+    margin-right: 4rem;
+}
+.content{
+    width: fit-content;
+    display:block;
+    margin: auto;
+}
+h1{
+    font-size: 4em;
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(255, 4, 58),rgb(46, 101, 221));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+fieldset{
+    display: block;
+    margin: 1.0rem auto;
+    text-align: center;
+    
+}
+label{
+    font-size: larger;
+}
+
+input{
+    text-align: center;
+    font-size: larger;
+}
+input:hover{
+    background: rgb(4, 213, 250);
+}
+select{
+    font-size: larger;
+}
+.but{
+    font-size: 3rem;
+    display: block;
+    margin: auto;
+    background: rgb(24, 23, 23);
+    color: rgb(1, 248, 248);
+}
+.but:hover{
+    background-color: rgb(9, 196, 93);
+    color: rgb(207, 50, 50);
+}
+body{
+    background: linear-gradient(to right, rgb(0, 110, 255), rgb(7, 230, 126), rgb(221, 105, 144));
+    font-family: 'Roboto',sans-serif;
+}
+.from-table{
+    background: rgba(0,0,0,.3);
+}
+.to-table{
+    background: rgba(0,0,0,.3);
+}
+.package{
+    background: rgba(0,0,0,.3);
+}
+table{
+    padding: 10px;
+    color: rgb(205, 226, 243);
+}
+span{
+    background: rgba(0,0,0,.5);
+}
+.message{
+    background: rgba(248, 241, 241, 0.705);
+    color: rgb(0, 0, 0)
+}

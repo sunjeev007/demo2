@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assignment.css">
+    <title>Shipping Detail</title>
+</head>
+<body>
+    <main>
+    <span><h1>Shipping Details</h1></span>
+    <form action="." method="post">
+    <input type="hidden" name="action" value="process_data">
+        <section class="from">
+            <fieldset>
+            <legend><h2>FROM: Sender</h2></legend>
+            <center><table class="from-table">
+                <tr>
+                    <td><label for="">Name:</label></td>
+                    <td><input type="text" name="name1" tite="Full Name" value="<?php echo htmlspecialchars($name1);?>" ><br></td>
+                </tr>
+                <tr>
+                    <td><label for="Address">Address:</label></td>
+                    <td><input type="text" name="address1" tite="Street Address" value="<?php echo htmlspecialchars($address1);?>" ><br></td>
+                </tr>
+                <tr>
+                    <td><label for="State">State: </label></td>
+                        <td><select name="state1" value="<?php echo htmlspecialchars($state1);?>" >
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                    <td><label for="zip">Zip: </label></td>
+                    <td><input id="zip" name="zip1" type="number" value="<?php echo htmlspecialchars($zip1);?>" ><br></td>
+                </tr>
+            </table>
+            </center>
+            </fieldset>
+        </section>
+        <section class="to">
+            <fieldset>
+            <legend><h2>TO: Receiver</h2></legend>
+            <center><table class="to-table">
+                <tr>
+                    <td><label for="">Name:</label></td>
+                    <td><input type="text" name="name2" tite="Full Name" value="<?php echo htmlspecialchars($name2);?>" ><br></td>
+                </tr>
+                <tr>
+                    <td><label for="Address">Address:</label></td>
+                    <td><input type="text" name="address2" tite="Street Address" value="<?php echo htmlspecialchars($address2);?>" ><br></td>
+                </tr>
+                <tr>
+                    <td><label for="State">State: </label></td>
+                        <td><select name="state2" value="<?php echo htmlspecialchars($state2);?>" >
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <tr><td><label for="zip">Zip: </label></td>
+                    <td><input id="zip" name="zip2" type="number" value="<?php echo htmlspecialchars($zip2);?>" ><br></td>
+                </tr>
+            </table>
+            </center>
+            </fieldset>
+        </section>
+        <section class="content">
+            <fieldset>
+                <legend><h2>Package Measurements</h2></legend>
+                <center><table class="package">
+                    <tr>
+                    <h3><label for="">Dimensions and Weight of the package</label></h3>
+                        <td><label for="">Length ( " ): <input type="number" name="length" min="1" max="36" value="<?php echo htmlspecialchars($length);?>" > </label></td>
+                    </tr>
+                    <tr><td><label for="">Breath ( " ): <input type="number" name="breath" min="1" max="36" value="<?php echo htmlspecialchars($breath);?>" > </label></td></tr>
+                    <tr><td><label for="">Height ( " ): <input type="number" name="height" min="1" max="36" value="<?php echo htmlspecialchars($height);?>" > </label></td></tr>
+                    <tr>
+                        <td><label for="">Weight ('lbs'): <input type="number" name="weight" min="1" max="150" value="<?php echo htmlspecialchars($weight);?>" ></label></td>
+                    </tr>
+                </table></center>
+            </fieldset>            
+        </section>
+        <center><div class="button">
+            <input class="but" type="submit" name="" value="Validate">
+        </div><br>
+    </center>
+    </form>
+    <div class="message">
+    <center><h2>Message: </h2>
+            <p><?php echo nl2br("$message", false);?></p></center>
+    </div>
+    </main>
+    
+</body>
+</html>
